@@ -1,4 +1,5 @@
-﻿Grupo
+﻿Integrantes de Grupo 
+
 U512541 Jose Tong Orme�o
 u800093	Jose Romucho Sotelo
 u201021462 Yussel Ulloa Gómez
