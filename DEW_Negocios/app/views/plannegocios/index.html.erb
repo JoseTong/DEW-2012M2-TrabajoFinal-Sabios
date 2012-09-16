@@ -1,0 +1,57 @@
+<h1>Listing plannegocios</h1>
+
+<table>
+  <tr>
+    <th>Codplan</th>
+    <th>Tituloplan</th>
+    <th>Codcategoria</th>
+    <th>Codsubcategoria</th>
+    <th>Vision</th>
+    <th>Razonamiento</th>
+    <th>Tiempoejecucionano</th>
+    <th>Tiempoejecucionmes</th>
+    <th>Tiempoejecuciondia</th>
+    <th>Inversiontotal</th>
+    <th>Margenneto</th>
+    <th>Roi</th>
+    <th>Linkdocumento</th>
+    <th>Precioventa</th>
+    <th>Validadoplan</th>
+    <th>Mensajerechazo</th>
+    <th>Codsabio</th>
+    <th>Codemprendedor</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @plannegocios.each do |plannegocio| %>
+  <tr>
+    <td><%= plannegocio.codplan %></td>
+    <td><%= plannegocio.tituloplan %></td>
+    <td><%= plannegocio.codcategoria %></td>
+    <td><%= plannegocio.codsubcategoria %></td>
+    <td><%= plannegocio.vision %></td>
+    <td><%= plannegocio.razonamiento %></td>
+    <td><%= plannegocio.tiempoejecucionano %></td>
+    <td><%= plannegocio.tiempoejecucionmes %></td>
+    <td><%= plannegocio.tiempoejecuciondia %></td>
+    <td><%= plannegocio.inversiontotal %></td>
+    <td><%= plannegocio.margenneto %></td>
+    <td><%= plannegocio.roi %></td>
+    <td><%= plannegocio.linkdocumento %></td>
+    <td><%= plannegocio.precioventa %></td>
+    <td><%= plannegocio.validadoplan %></td>
+    <td><%= plannegocio.mensajerechazo %></td>
+    <td><%= plannegocio.codsabio %></td>
+    <td><%= plannegocio.codemprendedor %></td>
+    <td><%= link_to 'Show', plannegocio %></td>
+    <td><%= link_to 'Edit', edit_plannegocio_path(plannegocio) %></td>
+    <td><%= link_to 'Destroy', plannegocio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Plannegocio', new_plannegocio_path %>

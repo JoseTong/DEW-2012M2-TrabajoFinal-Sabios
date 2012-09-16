@@ -1,0 +1,89 @@
+<%= form_for(@plannegocio) do |f| %>
+  <% if @plannegocio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@plannegocio.errors.count, "error") %> prohibited this plannegocio from being saved:</h2>
+
+      <ul>
+      <% @plannegocio.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :codplan %><br />
+    <%= f.text_field :codplan %>
+  </div>
+  <div class="field">
+    <%= f.label :tituloplan %><br />
+    <%= f.text_field :tituloplan %>
+  </div>
+  <div class="field">
+    <%= f.label :codcategoria %><br />
+    <%= f.text_field :codcategoria %>
+  </div>
+  <div class="field">
+    <%= f.label :codsubcategoria %><br />
+    <%= f.text_field :codsubcategoria %>
+  </div>
+  <div class="field">
+    <%= f.label :vision %><br />
+    <%= f.text_area :vision %>
+  </div>
+  <div class="field">
+    <%= f.label :razonamiento %><br />
+    <%= f.text_area :razonamiento %>
+  </div>
+  <div class="field">
+    <%= f.label :tiempoejecucionano %><br />
+    <%= f.number_field :tiempoejecucionano %>
+  </div>
+  <div class="field">
+    <%= f.label :tiempoejecucionmes %><br />
+    <%= f.number_field :tiempoejecucionmes %>
+  </div>
+  <div class="field">
+    <%= f.label :tiempoejecuciondia %><br />
+    <%= f.number_field :tiempoejecuciondia %>
+  </div>
+  <div class="field">
+    <%= f.label :inversiontotal %><br />
+    <%= f.text_field :inversiontotal %>
+  </div>
+  <div class="field">
+    <%= f.label :margenneto %><br />
+    <%= f.text_field :margenneto %>
+  </div>
+  <div class="field">
+    <%= f.label :roi %><br />
+    <%= f.text_field :roi %>
+  </div>
+  <div class="field">
+    <%= f.label :linkdocumento %><br />
+    <%= f.text_field :linkdocumento %>
+  </div>
+  <div class="field">
+    <%= f.label :precioventa %><br />
+    <%= f.text_field :precioventa %>
+  </div>
+  <div class="field">
+    <%= f.label :validadoplan %><br />
+    <%= f.text_field :validadoplan %>
+  </div>
+  <div class="field">
+    <%= f.label :mensajerechazo %><br />
+    <%= f.text_area :mensajerechazo %>
+  </div>
+  <div class="field">
+    <%= f.label :codsabio %><br />
+    <%= f.text_field :codsabio %>
+  </div>
+  <div class="field">
+    <%= f.label :codemprendedor %><br />
+    <%= f.text_field :codemprendedor %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
