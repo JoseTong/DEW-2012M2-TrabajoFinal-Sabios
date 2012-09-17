@@ -1,4 +1,6 @@
 DEWNegocios::Application.routes.draw do
+  resources :faqs
+
   resources :subcategoria
 
   resources :categoria
