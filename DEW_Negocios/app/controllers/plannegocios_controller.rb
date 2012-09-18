@@ -7,6 +7,13 @@ class PlannegociosController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @plannegocios }
+
+# Formulario de busqueda
+
+    @search = Plannegocio.search(params[:search])   
+    @plannegocios = @search.all  
+
+# FIN de Formulario de busqueda
     end
   end
 

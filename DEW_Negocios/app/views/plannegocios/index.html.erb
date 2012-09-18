@@ -55,3 +55,11 @@
 <br />
 
 <%= link_to 'New Plannegocio', new_plannegocio_path %>
+
+<%= form_for @search do |f| %>   
+ <p>   
+<%= f.label :tituloplan_contains %>   
+<%= f.text_field :tituloplan_contains %>   
+</p>   
+<p class="button"><%= f.submit "Search" %> </p>   
+<% end %>  
