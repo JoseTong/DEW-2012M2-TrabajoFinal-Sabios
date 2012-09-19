@@ -1,25 +1,25 @@
-<h1>Listing plannegocios</h1>
+<h1>Listando Planes de Negocios</h1>
 
 <table>
   <tr>
-    <th>Codplan</th>
-    <th>Tituloplan</th>
-    <th>Codcategoria</th>
-    <th>Codsubcategoria</th>
+    <th>Cod. plan</th>
+    <th>Titulo Plan</th>
+    <th>Categoria</th>
+    <th>Subcategoria</th>
     <th>Vision</th>
     <th>Razonamiento</th>
-    <th>Tiempoejecucionano</th>
-    <th>Tiempoejecucionmes</th>
-    <th>Tiempoejecuciondia</th>
-    <th>Inversiontotal</th>
-    <th>Margenneto</th>
+    <th>Tiempo de Ejecucion Ano</th>
+    <th>Tiempo de Ejecucion Mes</th>
+    <th>Tiempo de Ejecucion Dia</th>
+    <th>Inversion Total</th>
+    <th>Margen Neto</th>
     <th>Roi</th>
-    <th>Linkdocumento</th>
-    <th>Precioventa</th>
-    <th>Validadoplan</th>
-    <th>Mensajerechazo</th>
-    <th>Codsabio</th>
-    <th>Codemprendedor</th>
+    <th>Link del Documento</th>
+    <th>Precio Venta</th>
+    <th>Validar Plan</th>
+    <th>Mensaje de Rechazo</th>
+    <th>Sabio</th>
+    <th>Emprendedor</th>
     <th></th>
     <th></th>
     <th></th>
@@ -45,19 +45,22 @@
     <td><%= plannegocio.mensajerechazo %></td>
     <td><%= plannegocio.codsabio %></td>
     <td><%= plannegocio.codemprendedor %></td>
-    <td><%= link_to 'Show', plannegocio %></td>
-    <td><%= link_to 'Edit', edit_plannegocio_path(plannegocio) %></td>
-    <td><%= link_to 'Destroy', plannegocio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Visualizar', plannegocio %></td>
+    <td><%= link_to 'Editar', edit_plannegocio_path(plannegocio) %></td>
+    <td><%= link_to 'Eliminar', plannegocio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Plannegocio', new_plannegocio_path %>
+<%= link_to 'Crear Nuevo Plan de Negocio', new_plannegocio_path %>
 
 <%= form_for @search do |f| %>   
+ 
+ <p><th>Busqueda por:</th></p>
  <p>   
+ 
 <%= f.label :tituloplan_contains %>   
 <%= f.text_field :tituloplan_contains %>   
 </p>   
