@@ -11,6 +11,13 @@ DEWNegocios::Application.routes.draw do
 
   match 'signup', to: 'users#new', as: 'signup'
 
+<<<<<<< HEAD
+=======
+  resources :sabios
+
+  resources :emprendedors
+
+>>>>>>> 9bf6af0d024842e207bd5c20979601333848a119
   resources :faqs
 
   resources :subcategoria

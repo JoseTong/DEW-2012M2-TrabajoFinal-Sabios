@@ -11,13 +11,38 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20120919220702) do
+=======
+ActiveRecord::Schema.define(:version => 20120919195653) do
+>>>>>>> 9bf6af0d024842e207bd5c20979601333848a119
 
   create_table "categoria", :force => true do |t|
     t.string   "codcategoria"
     t.string   "nombrecategoria"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+  end
+
+  create_table "emprendedors", :force => true do |t|
+    t.string   "codsabio"
+    t.string   "nombres"
+    t.string   "apepaterno"
+    t.string   "apematerno"
+    t.string   "sexo"
+    t.string   "tipodi"
+    t.integer  "numerodi"
+    t.string   "email"
+    t.integer  "celular"
+    t.string   "direccion"
+    t.date     "fecnac"
+    t.string   "password"
+    t.string   "apelativo"
+    t.text     "autobigrafia"
+    t.string   "web"
+    t.integer  "ctabancaria"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "faqs", :force => true do |t|
@@ -49,6 +74,23 @@ ActiveRecord::Schema.define(:version => 20120919220702) do
     t.string   "codemprendedor"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+  end
+
+  create_table "sabios", :force => true do |t|
+    t.string   "codemprendedor"
+    t.string   "nombres"
+    t.string   "apepaterno"
+    t.string   "apematerno"
+    t.string   "sexo"
+    t.string   "tipodi"
+    t.integer  "numerodi"
+    t.string   "email"
+    t.integer  "celular"
+    t.string   "direccion"
+    t.date     "fecnac"
+    t.string   "password"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "subcategoria", :force => true do |t|
