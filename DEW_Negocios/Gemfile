@@ -6,11 +6,8 @@ gem 'rails', '3.2.6'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-<<<<<<< HEAD
-gem 'simple_login'
-=======
 gem "simple_login", "~> 0.0.8"
->>>>>>> 9bf6af0d024842e207bd5c20979601333848a119
+
 
 # gema para busqueda filtradas
 gem 'meta_search' 

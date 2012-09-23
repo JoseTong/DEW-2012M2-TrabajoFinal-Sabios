@@ -11,11 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20120919220702) do
-=======
 ActiveRecord::Schema.define(:version => 20120919195653) do
->>>>>>> 9bf6af0d024842e207bd5c20979601333848a119
 
   create_table "categoria", :force => true do |t|
     t.string   "codcategoria"
