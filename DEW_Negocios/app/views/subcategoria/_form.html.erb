@@ -23,7 +23,14 @@
     <%= f.label :nombresubcategoria %><br />
     <%= f.text_field :nombresubcategoria %>
   </div>
+  
+   <div class="field">    
+    <%= f.collection_select :categoria_id, Categorium.all, :id, :nombrecategoria, :prompt => true %>
+	<!--Esto es un comentario -->
+  </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+

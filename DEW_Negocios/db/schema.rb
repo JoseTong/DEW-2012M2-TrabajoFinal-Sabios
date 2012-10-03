@@ -93,9 +93,12 @@ ActiveRecord::Schema.define(:version => 20120919195653) do
     t.string   "codcategoria"
     t.string   "codsubcategoria"
     t.string   "nombresubcategoria"
+    t.integer  "categoria_id"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
   end
+
+  add_index "subcategoria", ["categoria_id"], :name => "index_subcategoria_on_categoria_id"
 
   create_table "users", :force => true do |t|
     t.string   "email"

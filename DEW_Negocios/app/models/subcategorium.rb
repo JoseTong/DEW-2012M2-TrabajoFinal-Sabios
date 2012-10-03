@@ -1,3 +1,4 @@
 class Subcategorium < ActiveRecord::Base
-  attr_accessible :codcategoria, :codsubcategoria, :nombresubcategoria
+  belongs_to :categoria
+  attr_accessible :codcategoria, :codsubcategoria, :nombresubcategoria, :categoria_id
 end

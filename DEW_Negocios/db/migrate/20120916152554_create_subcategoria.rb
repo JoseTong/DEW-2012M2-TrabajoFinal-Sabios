@@ -4,8 +4,11 @@ class CreateSubcategoria < ActiveRecord::Migration
       t.string :codcategoria
       t.string :codsubcategoria
       t.string :nombresubcategoria
+	  t.references :categoria
 
       t.timestamps
     end
+	add_index :subcategoria, :categoria_id
   end
 end
+
