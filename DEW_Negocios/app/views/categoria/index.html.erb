@@ -1,9 +1,9 @@
-<h1>Listing categoria</h1>
+<h1>Lista de Categorias</h1>
 
 <table>
   <tr>
-    <th>Codcategoria</th>
-    <th>Nombrecategoria</th>
+    <th>Codigo</th>
+    <th>Descripcion</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,13 +13,13 @@
   <tr>
     <td><%= categorium.codcategoria %></td>
     <td><%= categorium.nombrecategoria %></td>
-    <td><%= link_to 'Show', categorium %></td>
-    <td><%= link_to 'Edit', edit_categorium_path(categorium) %></td>
-    <td><%= link_to 'Destroy', categorium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Mostrar', categorium %></td>
+    <td><%= link_to 'Editar', edit_categorium_path(categorium) %></td>
+    <td><%= link_to 'Eliminar', categorium, method: :delete, data: { confirm: 'Esta seguro de eliminar?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Categorium', new_categorium_path %>
+<%= link_to 'Nueva Categoria', new_categorium_path %>
