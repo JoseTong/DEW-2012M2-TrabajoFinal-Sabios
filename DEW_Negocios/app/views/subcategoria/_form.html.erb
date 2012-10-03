@@ -11,20 +11,14 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :CodigoCategoria%><br />
-    <%= f.text_field :codcategoria %>
-  </div>
-  <div class="field">
-    <%= f.label :CodigoSubcategoria%><br />
-    <%= f.text_field :codsubcategoria %>
-  </div>
+  
   <div class="field">
     <%= f.label :Descripcion%><br />
     <%= f.text_field :nombresubcategoria %>
   </div>
   
    <div class="field">    
+	<%= f.label :Categoria%><br />
     <%= f.collection_select :categoria_id, Categorium.all, :id, :nombrecategoria, :prompt => true %>
 	<!--Esto es un comentario -->
   </div>

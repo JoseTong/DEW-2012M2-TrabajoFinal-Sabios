@@ -1,9 +1,7 @@
 <h1>Lista de Subcategorias</h1>
 
 <table>
-  <tr>
-    <th>Codigo Categoria</th>
-    <th>Codigo Subcategoria</th>
+  <tr>  
     <th>Descripcion</th>
     <th></th>
     <th></th>
@@ -11,9 +9,7 @@
   </tr>
 
 <% @subcategoria.each do |subcategorium| %>
-  <tr>
-    <td><%= subcategorium.codcategoria %></td>
-    <td><%= subcategorium.codsubcategoria %></td>
+  <tr>    
     <td><%= subcategorium.nombresubcategoria %></td>
     <td><%= link_to 'Mostrar', subcategorium %></td>
     <td><%= link_to 'Editar', edit_subcategorium_path(subcategorium) %></td>

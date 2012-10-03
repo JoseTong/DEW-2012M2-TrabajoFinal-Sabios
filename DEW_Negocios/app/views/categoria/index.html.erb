@@ -1,8 +1,7 @@
 <h1>Lista de Categorias</h1>
 
 <table>
-  <tr>
-    <th>Codigo</th>
+  <tr>    
     <th>Descripcion</th>
     <th></th>
     <th></th>
@@ -10,8 +9,7 @@
   </tr>
 
 <% @categoria.each do |categorium| %>
-  <tr>
-    <td><%= categorium.codcategoria %></td>
+  <tr>    
     <td><%= categorium.nombrecategoria %></td>
     <td><%= link_to 'Mostrar', categorium %></td>
     <td><%= link_to 'Editar', edit_categorium_path(categorium) %></td>
