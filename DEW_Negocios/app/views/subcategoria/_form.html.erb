@@ -1,7 +1,7 @@
 <%= form_for(@subcategorium) do |f| %>
   <% if @subcategorium.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@subcategorium.errors.count, "error") %> prohibited this subcategorium from being saved:</h2>
+      <h2><%= pluralize(@subcategorium.errors.count,'Error')%></h2>
 
       <ul>
       <% @subcategorium.errors.full_messages.each do |msg| %>
@@ -19,8 +19,7 @@
   
    <div class="field">    
 	<%= f.label :Categoria%><br />
-    <%= f.collection_select :categoria_id, Categorium.all, :id, :nombrecategoria, :prompt => true %>
-	<!--Esto es un comentario -->
+    <%= f.collection_select :categoria_id, Categorium.all, :id, :nombrecategoria, :prompt => true %>	
   </div>
   
   <div class="actions">
