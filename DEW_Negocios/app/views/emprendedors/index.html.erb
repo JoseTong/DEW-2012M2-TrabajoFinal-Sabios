@@ -1,6 +1,6 @@
-<h1>Lista de Emprendedors</h1>
+<h1>Lista de Emprendedores</h1>
 
-<table>
+<table border="3" cellpadding="1" cellspacing="1" bgcolor=#FFFFFF>
   <tr>
     <th>Codigo</th>
     <th>Nombres</th>
@@ -18,9 +18,8 @@
     <th>Autobigrafia</th>
     <th>Web Personal</th>
     <th>Cuenta Bancaria</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    
+ 
   </tr>
 
 <% @emprendedors.each do |emprendedor| %>
@@ -41,9 +40,9 @@
     <td><%= emprendedor.autobigrafia %></td>
     <td><%= emprendedor.web %></td>
     <td><%= emprendedor.ctabancaria %></td>
-    <td><%= link_to 'Show', emprendedor %></td>
-    <td><%= link_to 'Edit', edit_emprendedor_path(emprendedor) %></td>
-    <td><%= link_to 'Destroy', emprendedor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Visualizar', emprendedor %></td>
+    <td><%= link_to 'Editar', edit_emprendedor_path(emprendedor) %></td>
+    <td><%= link_to 'Eliminar', emprendedor, method: :delete, data: { confirm: 'Estas tu seguro de eliminar al emprendedor?' } %></td>
   </tr>
 <% end %>
 </table>
