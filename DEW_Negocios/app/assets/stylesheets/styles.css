@@ -58,17 +58,16 @@ h3 {
 	border:0;
 }
 #container { 
-	width: 800px;  
+	width: 860px;  
 	margin: 0 auto;
-
 } 
 .mainContent {
 	padding:20px 20px;
 }
 .headerPic {
 	height:374px;
-	width:800px;
-	background:url(s_3.png) no-repeat left top;
+	width:860px;
+	background:url(images/s_3.png) no-repeat left top;
 	color:#ffffff;
 }
 .headerPic p {
@@ -90,18 +89,12 @@ h3 {
 .sidebarRigth {
 	margin-left:490px;
 	border-left:1px solid #505151;
-	padding:10 10 0 20px;
-}
-.sidebarlogo {
-	margin-left:560px;
-#	border-left:1px solid #505151;
 	padding:0 0 0 20px;
 }
-
 #footer {
 	text-align:center;
 	height:75px;
-	background:url(footerBackground.jpg) repeat-x left top;
+	background:url(images/footerBackground.jpg) repeat-x left top;
 	color:#ffffff;
 }
 #footer p {
@@ -120,42 +113,39 @@ h3 {
 #navcontainer ul {
 	padding-left: 0;
 	margin-left: 0;
-	background: url(menuBackground.jpg) repeat-x left top;
+	background: url(images/menuBackground.jpg) repeat-x left top;
 	color: White;
 	float: left;
-	width: 100%;
-	height:60px;
+	width: 120%;
+	height:80px;
 }
 #navcontainer ul li { 
 	display: inline;
 	color:#ffffff;
 }
+/*BARRA DE TITULO*/
+
 #navcontainer ul li a {
 	padding:18px 29px 0 30px;
-	background: url(menuBackground.jpg) repeat-x left top;
+	background: url(images/menuBackground.jpg) repeat-x left top;
 	color: #ffffff;
 	text-decoration: none;
 	float: left;
-	font-size:16px;
+	font-weight:bold;
+	font-size:15px;
 }
 #navcontainer ul li a:hover {
-	background: url(menuActive.jpg) repeat-x left top;
+	background: url(images/menuActive.jpg) repeat-x left top;
 	color: #fff;
 	height:60px;
 }
 #navcontainer #active a {
-	background: url(menuActive.jpg) repeat-x left top;
+	background: url(images/menuActive.jpg) repeat-x left top;
 	color: #fff;
 	height:60px;
 }
 .menuSeparator {
-	height:80px;
+	height:60px;
 	width:2px;
 	float:left;
-}
-.span4 offset4 well {
-	height:80px;
-	width:2px;
-	float:left;
-	background: url(menuActive.jpg) repeat-x left top;
 }
