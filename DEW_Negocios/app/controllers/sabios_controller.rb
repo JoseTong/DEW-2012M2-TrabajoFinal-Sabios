@@ -44,7 +44,7 @@ class SabiosController < ApplicationController
 
     respond_to do |format|
       if @sabio.save
-        format.html { redirect_to @sabio, notice: 'Sabio was successfully created.' }
+        format.html { redirect_to @sabio, notice: 'El Sabio ha sido creado sastifactoriamente..' }
         format.json { render json: @sabio, status: :created, location: @sabio }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class SabiosController < ApplicationController
 
     respond_to do |format|
       if @sabio.update_attributes(params[:sabio])
-        format.html { redirect_to @sabio, notice: 'Sabio was successfully updated.' }
+        format.html { redirect_to @sabio, notice: 'Se ha actualizado los datos del Sabio sastifactoriamente..' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

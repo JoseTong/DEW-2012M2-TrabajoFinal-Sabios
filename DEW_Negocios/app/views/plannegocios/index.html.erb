@@ -69,7 +69,7 @@
 
 <% @plannegocios.each do |plannegocio| %>
   <tr>
-<<<<<<< HEAD
+
     <td><font color="black"><%= plannegocio.codplan %></font></td>
     <td><font color="black"><%= plannegocio.tituloplan %></font></td>
     <td><font color="black"><%= plannegocio.codcategoria %></font></td>
@@ -91,7 +91,7 @@
     <td><%= link_to 'Show', plannegocio %></td>
     <td><%= link_to 'Edit', edit_plannegocio_path(plannegocio) %></td>
     <td><%= link_to 'Destroy', plannegocio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-=======
+
     <td><%= plannegocio.codplan %></td>
     <td><%= plannegocio.tituloplan %></td>
     <td><%= plannegocio.codcategoria %></td>
@@ -113,7 +113,7 @@
     <td><%= link_to 'Visualizar', plannegocio %></td>
     <td><%= link_to 'Editar', edit_plannegocio_path(plannegocio) %></td>
     <td><%= link_to 'Eliminar', plannegocio, method: :delete, data: { confirm: 'Estas tu seguro de eliminar el plan de negocio?' } %></td>	
->>>>>>> 12b6e7166255a55fa96d12c02b116aeaba683cfc
+
   </tr>
 <% end %>
 </table>
