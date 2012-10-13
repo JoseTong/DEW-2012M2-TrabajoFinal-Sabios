@@ -58,7 +58,7 @@ h3 {
 	border:0;
 }
 #container { 
-	width: 800px;  
+	width: 860px;  
 	margin: 0 auto;
 } 
 .mainContent {
@@ -66,7 +66,7 @@ h3 {
 }
 .headerPic {
 	height:374px;
-	width:800px;
+	width:860px;
 	background:url(images/s_3.png) no-repeat left top;
 	color:#ffffff;
 }
@@ -116,20 +116,23 @@ h3 {
 	background: url(images/menuBackground.jpg) repeat-x left top;
 	color: White;
 	float: left;
-	width: 100%;
-	height:60px;
+	width: 120%;
+	height:80px;
 }
 #navcontainer ul li { 
 	display: inline;
 	color:#ffffff;
 }
+/*BARRA DE TITULO*/
+
 #navcontainer ul li a {
 	padding:18px 29px 0 30px;
 	background: url(images/menuBackground.jpg) repeat-x left top;
 	color: #ffffff;
 	text-decoration: none;
 	float: left;
-	font-size:24px;
+	font-weight:bold;
+	font-size:15px;
 }
 #navcontainer ul li a:hover {
 	background: url(images/menuActive.jpg) repeat-x left top;
