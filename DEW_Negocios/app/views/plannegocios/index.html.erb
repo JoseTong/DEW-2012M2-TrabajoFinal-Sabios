@@ -11,7 +11,7 @@
 	<!-- begin #header -->
     <div id="header">
     	<div class="mainLogo">
-            <div class="logo">Security </div>
+            <div class="logo">Business Plans</div>
             
         </div>
         <div class="icons">
@@ -66,7 +66,7 @@
 
 <% @plannegocios.each do |plannegocio| %>
   <tr>
-
+<!--
     <td><font color="black"><%= plannegocio.codplan %></font></td>
     <td><font color="black"><%= plannegocio.tituloplan %></font></td>
     <td><font color="black"><%= plannegocio.codcategoria %></font></td>
@@ -88,7 +88,8 @@
     <td><%= link_to 'Show', plannegocio %></td>
     <td><%= link_to 'Edit', edit_plannegocio_path(plannegocio) %></td>
     <td><%= link_to 'Destroy', plannegocio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-
+-->
+	
     <td><%= plannegocio.codplan %></td>
     <td><%= plannegocio.tituloplan %></td>
     <td><%= plannegocio.codcategoria %></td>
@@ -117,12 +118,12 @@
 
 <br />
 
-<%= link_to 'New Plannegocio', new_plannegocio_path %>
+<%= link_to 'Nuevo plan de Negocio', new_plannegocio_path %>
 
 <%= form_for @search do |f| %>   
  <p>   
 <%= f.label :tituloplan_contains %>   
 <%= f.text_field :tituloplan_contains %>   
 </p>   
-<p class="button"><%= f.submit "Search" %> </p>   
+<p class="button"><%= f.submit "Buscar plan de negocio" %> </p>   
 <% end %>  
