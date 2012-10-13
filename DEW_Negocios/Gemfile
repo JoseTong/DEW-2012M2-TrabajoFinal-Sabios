@@ -9,7 +9,7 @@ gem 'sqlite3'
 gem "simple_login", "~> 0.0.8"
 
 
-# gema para busqueda filtradas
+# gema para busqueda filtradas - Ronald
 gem 'meta_search' 
 
 # Gems used only for assets and not required
