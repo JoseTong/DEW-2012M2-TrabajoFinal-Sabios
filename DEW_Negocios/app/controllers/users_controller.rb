@@ -11,6 +11,7 @@ class UsersController < ApplicationController
       redirect_to "http://localhost:3000/sabios/new" 
     else
       render "new"
+      #ddsdsds
     end
   end
 
