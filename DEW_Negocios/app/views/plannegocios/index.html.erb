@@ -1,30 +1,97 @@
-<h1>Listando Planes de Negocios</h1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Free Website Template 14</title>
+<link href="plannegocios.css" rel="stylesheet" type="text/css" />
+</head>
+<div id="container">
+  <!-- begin #header -->
+    <div id="header">
+      <div class="mainLogo">
+            <div class="logo">NEGOCIOS </div>
+        <br>    
+        </div>
 
-<table border="3" cellpadding="1" cellspacing="1" bgcolor=#FFFFFF>
+        
+
+        <div id="navcontainer">
+
+            <ul id="navlist">
+
+                <li id="active"><a href="#">HOME</a></li>
+
+                <li class="menuSeparator"><img src="menuSeparator.png" alt="" /></li>
+
+                <li><a href="#">SABIOS</a></li>
+                <li class="menuSeparator"><img src="menuSeparator.png" alt="" /></li>
+
+                <li><a href="#">EMPRENDEDOR</a></li>
+
+                <li class="menuSeparator"><img src="menuSeparator.png" alt="" /></li>
+                
+
+                <li><a href="#">PLAN  DE NEGOCIO</a></li>
+
+  
+            </ul>
+
+        </div>
+    </div>
+
+<h1>Lista de Planes de Negocio</h1>
+
+<table bgcolor= "#FFFFFF" border="2" cellpadding="1" cellspacing="1" >
   <tr>
-    <th>Cod. Plan</th>
-    <th>Titulo Plan</th>
-    <th>Categoria</th>
-    <th>Subcategoria</th>
-    <th>Vision</th>
-    <th>Razonamiento</th>
-    <th>Tiempo de Ejecucion Ano</th>
-    <th>Tiempo de Ejecucion Mes</th>
-    <th>Tiempo de Ejecucion Dia</th>
-    <th>Inversion Total</th>
-    <th>Margen Neto</th>
-    <th>Roi</th>
-    <th>Link del Documento</th>
-    <th>Precio Venta</th>
-    <th>Validar Plan</th>
-    <th>Mensaje de Rechazo</th>
-    <th>Sabio</th>
-    <th>Emprendedor</th>
-	
+    <th bgcolor= "#c0c0c0"><font color="black">Codigo</font></th>
+    <th bgcolor= "#c0c0c0"><font color="black">Titulo</font></th>
+
+    <th bgcolor= "#c0c0c0"><font color="black">Codcategoria</font></th>
+    <th bgcolor= "#c0c0c0"><font color="black">Codsubcategoria</font></th>
+    <th bgcolor= "#c0c0c0"><font color="black">Vision</font></th>
+    <th bgcolor= "#c0c0c0"><font color="black">Razonamiento</font></th>
+    <th bgcolor= "#c0c0c0"><font color="black">Tiempoejecucionano</font></th>
+    <th bgcolor= "#c0c0c0"><font color="black">Tiempoejecucionmes</font></th>
+    <th bgcolor= "#c0c0c0"><font color="black">Tiempoejecuciondias</font></th>
+    <th bgcolor= "#c0c0c0"><font color="black">Inversiontotal</font></th>
+    <th bgcolor= "#c0c0c0"><font color="black">Margenneto</font></th>
+    <th bgcolor= "#c0c0c0"><font color="black">Roi</font></th>
+    <th bgcolor= "#c0c0c0"><font color="black">Linkdocumento</font></th>
+    <th bgcolor= "#c0c0c0"><font color="black">Precioventa</font></th>
+    <th bgcolor= "#c0c0c0"><font color="black">Validadoplan</font></th>
+    <th bgcolor= "#c0c0c0"><font color="black">Mensajerechazo</font></th>
+    <th bgcolor= "#c0c0c0"><font color="black">CodSabio</font></th>
+    <th bgcolor= "#c0c0c0"><font color="black">Codemprendedor</font></th>
+    <th></th>
+    <th></th>
+    <th></th>
   </tr>
 
 <% @plannegocios.each do |plannegocio| %>
   <tr>
+<<<<<<< HEAD
+    <td><font color="black"><%= plannegocio.codplan %></font></td>
+    <td><font color="black"><%= plannegocio.tituloplan %></font></td>
+    <td><font color="black"><%= plannegocio.codcategoria %></font></td>
+    <td><font color="black"><%= plannegocio.codsubcategoria %></font></td>
+    <td><font color="black"><%= plannegocio.vision %></font></td>
+    <td><font color="black"><%= plannegocio.razonamiento %></font></td>
+    <td><font color="black"><%= plannegocio.tiempoejecucionano %></font></td>
+    <td><font color="black"><%= plannegocio.tiempoejecucionmes %></font></td>
+    <td><font color="black"><%= plannegocio.tiempoejecuciondia %></font></td>
+    <td><font color="black"><%= plannegocio.inversiontotal %></font></td>
+    <td><font color="black"><%= plannegocio.margenneto %></font></td>
+    <td><font color="black"><%= plannegocio.roi %></font></td>
+    <td><font color="black"><%= plannegocio.linkdocumento %></font></td>
+    <td><font color="black"><%= plannegocio.precioventa %></font></td>
+    <td><font color="black"><%= plannegocio.validadoplan %></font></td>
+    <td><font color="black"><%= plannegocio.mensajerechazo %></font></td>
+    <td><font color="black"><%= plannegocio.codsabio %></font></td>
+    <td><font color="black"><%= plannegocio.codemprendedor %></font></td>
+    <td><%= link_to 'Show', plannegocio %></td>
+    <td><%= link_to 'Edit', edit_plannegocio_path(plannegocio) %></td>
+    <td><%= link_to 'Destroy', plannegocio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+=======
     <td><%= plannegocio.codplan %></td>
     <td><%= plannegocio.tituloplan %></td>
     <td><%= plannegocio.codcategoria %></td>
@@ -46,19 +113,17 @@
     <td><%= link_to 'Visualizar', plannegocio %></td>
     <td><%= link_to 'Editar', edit_plannegocio_path(plannegocio) %></td>
     <td><%= link_to 'Eliminar', plannegocio, method: :delete, data: { confirm: 'Estas tu seguro de eliminar el plan de negocio?' } %></td>	
+>>>>>>> 12b6e7166255a55fa96d12c02b116aeaba683cfc
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Crear Nuevo Plan de Negocio', new_plannegocio_path %>
+<%= link_to 'New Plannegocio', new_plannegocio_path %>
 
 <%= form_for @search do |f| %>   
- 
- <p><th>Busqueda por:</th></p>
  <p>   
- 
 <%= f.label :tituloplan_contains %>   
 <%= f.text_field :tituloplan_contains %>   
 </p>   
