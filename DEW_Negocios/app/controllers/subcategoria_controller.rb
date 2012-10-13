@@ -24,8 +24,8 @@ class SubcategoriaController < ApplicationController
   # GET /subcategoria/new
   # GET /subcategoria/new.json
   def new
-    @subcategorium = Subcategorium.new
-
+    @subcategorium = Subcategorium.new	
+	
     respond_to do |format|	  
       format.html # new.html.erb
       format.json { render json: @subcategorium }
