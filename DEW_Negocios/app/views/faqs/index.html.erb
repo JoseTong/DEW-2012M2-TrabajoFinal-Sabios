@@ -2,9 +2,9 @@
 
 <table>
   <tr>
+	<th>Plan de Negocio</th>
     <th>Pregunta</th>
-    <th>Respuesta</th>
-    <th>Satisfactorio</th>
+    <th>Respuesta</th>    
     <th></th>
     <th></th>
     <th></th>
@@ -12,9 +12,9 @@
 
 <% @faqs.each do |faq| %>
   <tr>
+	<td><%= faq.plannegocio.tituloplan %></td>
     <td><%= faq.pregunta %></td>
-    <td><%= faq.respuesta %></td>
-    <td><%= faq.satisfactorio %></td>
+    <td><%= faq.respuesta %></td>    
     <td><%= link_to 'Mostrar', faq %></td>
     <td><%= link_to 'Editar', edit_faq_path(faq) %></td>
     <td><%= link_to 'Eliminar', faq, method: :delete, data: { confirm: 'Esta seguro de eliminar?' } %></td>

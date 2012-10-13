@@ -45,9 +45,12 @@ ActiveRecord::Schema.define(:version => 20120919195653) do
     t.text     "pregunta"
     t.text     "respuesta"
     t.string   "satisfactorio"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.integer  "plannegocio_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
+
+  add_index "faqs", ["plannegocio_id"], :name => "index_faqs_on_plannegocio_id"
 
   create_table "plannegocios", :force => true do |t|
     t.string   "codplan"
