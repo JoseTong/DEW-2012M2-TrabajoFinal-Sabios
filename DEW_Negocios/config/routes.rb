@@ -1,6 +1,6 @@
 DEWNegocios::Application.routes.draw do
   resources :password_resets
-
+  root :to => "sessions#new"
   resources :sessions
 
   resources :users

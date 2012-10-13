@@ -1,16 +1,69 @@
-<!-- Login Non Modal -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Free Website Template 14</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
 
-<div class="container">
+<!-- begin #container -->
+<div id="container">
+  <!-- begin #header -->
+    <div id="header">
+      <div class="mainLogo">
+            <div class="logo">NEGOCIOS </div>
+        <br>    
+        </div>
+
+        
+
+        <div id="navcontainer">
+
+            <ul id="navlist">
+
+                <li id="active"><a href="#">HOME</a></li>
+
+                <li class="menuSeparator"><img src="menuSeparator.png" alt="" /></li>
+
+                <li><a href="#">SABIOS</a></li>
+                <li class="menuSeparator"><img src="menuSeparator.png" alt="" /></li>
+
+                <li><a href="#">EMPRENDEDOR</a></li>
+
+                <li class="menuSeparator"><img src="menuSeparator.png" alt="" /></li>
+                
+
+                <li><a href="#">PLAN  DE NEGOCIO</a></li>
+
+  
+            </ul>
+
+        </div>
+    </div>
+    <!-- end #header -->
+
+    <div class="headerPic">
+
+    <div class="sidebarLeft">
+        <h2>SE UN ESPERTO</h>
+
+        <h4><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>          Algunas personas sueñan con hacer grandes cosas, mientras otras están           despiertas y las hacen, esa persona eres tú.</h4>
+    </div>
+                        
+        <div class="sidebarlogo">
+         <BR>
+         <h4 Align=center>Ingrese al Sistema </h4>   
+         
+          <BR>
+            <!-- formulario -->
+  <div class="container" >
   <div class="row">
-    <div class="span4 offset4 well">
+            <div class="span4 offset4 well">
       <%= form_tag (sessions_path), class: "form" do %>
         <fieldset>
-
-          <legend>Login</legend>
-
           <legend>Iniciar Sesión</legend>
           <img src="http://s2.subirimagenes.com/otros/previo/thump_8002320login.jpg" WIDTH=160 HEIGHT=120 BORDER=0 ALT="Logo">
-
           <div class="control-group">
             <%= label_tag :email, nil ,class: "control-label" %>
             <div class="controls"><%= text_field_tag :email, params[:email], class: "input-xlarge" %></div>
@@ -19,25 +72,70 @@
             <%= label_tag :password, nil, class: "control-label"  %>
             <div class="controls"><%= password_field_tag (:password), nil ,class: "input-xlarge" %></div>
           </div>
-
-          <div class="control-group">
-            <%= label_tag :remember_me, nil, class: "control-label"  %>
-            <%= check_box_tag :remember_me, 1, params[:remember_me] %>
-          </div>
-          <div class="actions"><%= submit_tag t("user.log_in", default: "Log in"), class: "btn btn-large btn-primary" %></div>
-        </fieldset>
-      <% end %>
-        <%= link_to t("user.forgotten_password", default: "Forgotten password?"), new_password_reset_path %> - <%= link_to t("user.sign_up", default: "Sign Up"), new_user_path %>
-
           <div class="actions"><%= submit_tag t("user.log_in", default: "Ingresar"), class: "btn btn-large btn-primary" %></div>
         </fieldset>
       <% end %>
         <%= link_to t("user.sign_up", default: "Registrase"), new_user_path %>
 
 
+    </div>
+    </div>
+    </div>
+
+
+        <!-- formulario -->
+
+        </div>
 
     </div>
-  </div>
-</div>
+    <div class="mainContent">
+      <div class="sidebarLeft">
+            <h1>Planes de negocios con porcentaje de utilidad de hasta el 30% </h1>
+            <p>
+              La ventaja de un plan de negocios es que facilita la interpretación de las distintas circunstancias donde se van a desarrollar las actividades de la empresa. Teniendo en cuenta la complejidad y dinámica de los mercados actuales, ninguna empresa puede crecer y competir sin tener en cuenta las variables que intervienen y realizar un análisis integral para verificar si el emprendimiento es o no factible. Por otra parte es necesario señalar que siempre está presente en todo negocio el riesgo y la incertidumbre asociados con el éxito o fracaso del mismo. La planificación contribuye a resolver un número importante de problemas que tienen las pequeñas y medianas empresas, como por ejemplo:<br><br>
 
-<!-- End of Login Non Modal -->
+                    - Falta de capital de inversión y acceso a las fuentes de financiamiento.<br>
+                    - Prever situaciones que afectan la rentabilidad.<br>
+                    - Introducir en forma eficaz nuevos productos y servicios al mercado.<br>
+                    - Establecer y aplicar normas de producción y control de calidad.<br>
+                    - Falta de estrategias de marketing.<br><br>
+             Las razones por las que se decide realizar un plan de negocios son:<br>
+
+            </p><p> - Verificar que un negocio sea viable desde el punto de vista económico y financiero antes de su realización.<br>
+                    - Detectar y prevenir problemas antes de que ocurran, ahorrando tiempo y dinero.<br>
+                    - Determinar necesidades de recursos con anticipación.<br>
+                    - Examinar el desempeño de un negocio en marcha.<br>
+                    - Tasar una empresa para la venta.<br>
+                    - Conducir y buscar la forma más eficiente de poner en marcha un emprendimiento.<br>
+                    - Respaldar la solicitud de crédito a una entidad financiera.<br><br>
+                </p>
+        </div>
+        <div class="sidebarRigth">
+          <h1>Equipo de Trabajo</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos 
+            </p>
+            <br /><br /><img src="01.png" alt="" />
+        </div>
+    </div>
+    <br class="clearfloat" />
+    <!-- begin #footer -->
+    <div id="footer">
+        <p>
+            Terminos de Uso :<BR>
+            Desarrollado por Grupo de Trabajo Web del la UPC<BR>
+            OCTUBRE 2012<BR>
+<!--
+            <a title="This page validates as XHTML 1.0 Strict" href="http://validator.w3.org/check/referer" class="footerLink"><abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a> | 
+            <a title="This page validates as CSS" href="http://jigsaw.w3.org/css-validator/check/referer" class="footerLink"><abbr title="Cascading Style Sheets">CSS</abbr></a><br />
+           <div class="vlinks"><a href="http://www.webdesign.org">Web design</a> by <a title="Free Templates Online" href="http://www.freetemplatesonline.com">Free Templates</a> Online-->
+</div>
+<!--VisibleLinks-->
+
+</div>
+    </div>
+    <!-- end #footer -->
+</div>
+<!-- end #container -->
+</body>
+</html>

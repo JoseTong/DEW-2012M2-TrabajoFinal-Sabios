@@ -17,23 +17,6 @@
           </div>
         <% end %>
         <fieldset>
-<<<<<<< HEAD
-          <legend>Sign Up</legend>
-          <div class="control-group">
-            <%= f.label :email, nil ,class: "control-label" %>
-            <div class="controls"><%= f.text_field :email, class: "input-xlarge" %></div>
-          </div>
-          <div class="control-group">
-            <%= f.label :password, nil ,class: "control-label" %>
-            <div class="controls"><%= f.password_field :password, class: "input-xlarge" %></div>
-          </div>
-          <div class="control-group">
-            <%= f.label :password_confirmation, nil ,class: "control-label" %>
-            <div class="controls"><%= f.password_field :password_confirmation, class: "input-xlarge" %></div>
-          </div>
-          
-          <div class="actions"><%= f.submit t("user.sign_up", default: "Sign Up"), class: "btn btn-large btn-primary"  %></div>
-=======
           <legend>Registro</legend>
           <div class="control-group">
             <%= f.label "Email", nil ,class: "control-label" %>
@@ -43,18 +26,20 @@
             <%= f.label "Password", nil ,class: "control-label" %>
             <div class="controls"><%= f.password_field :password, class: "input-xlarge" %></div>
           </div>
+          
           <div class="control-group">
             <%= f.label "Confirmar Password", nil ,class: "control-label" %>
             <div class="controls"><%= f.password_field :password_confirmation, class: "input-xlarge" %></div>
           </div>
 
           
+          
 
           <div class="actions"><%= f.submit t("user.sign_up", default: "Grabar Datos"), class: "btn btn-large btn-primary"  %></div>
->>>>>>> 9bf6af0d024842e207bd5c20979601333848a119
         </fieldset>
       <% end %>
     </div>
   </div>
+  
 </div>
 <!-- End of Sing UP Non Modal -->
