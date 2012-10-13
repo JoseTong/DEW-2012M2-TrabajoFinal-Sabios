@@ -23,7 +23,7 @@ class FaqsController < ApplicationController
 
   # GET /faqs/new
   # GET /faqs/new.json
-  def new
+  def new	  
     @faq = Faq.new
 
     respond_to do |format|
@@ -44,7 +44,7 @@ class FaqsController < ApplicationController
 
     respond_to do |format|
       if @faq.save
-        format.html { redirect_to @faq, notice: 'Faq was successfully created.' }
+        format.html { redirect_to @faq, notice: 'La pregunta fue creada satisfactoriamente.' }
         format.json { render json: @faq, status: :created, location: @faq }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class FaqsController < ApplicationController
 
     respond_to do |format|
       if @faq.update_attributes(params[:faq])
-        format.html { redirect_to @faq, notice: 'Faq was successfully updated.' }
+        format.html { redirect_to @faq, notice: 'La Pregunta fue actualizada correctamente.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

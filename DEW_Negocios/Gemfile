@@ -7,7 +7,7 @@ gem 'rails', '3.2.6'
 
 gem 'sqlite3'
 gem "simple_login", "~> 0.0.8"
-
+gem "heroku", "~> 2.32.11"
 
 # gema para busqueda filtradas - Ronald
 gem 'meta_search' 

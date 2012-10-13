@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <b>Plannegocio:</b>
+  <%= @faq.plannegocio.tituloplan %>
+</p>
+
+<p>
   <b>Pregunta:</b>
   <%= @faq.pregunta %>
 </p>
@@ -9,12 +14,6 @@
   <b>Respuesta:</b>
   <%= @faq.respuesta %>
 </p>
-
-<p>
-  <b>Satisfactorio:</b>
-  <%= @faq.satisfactorio %>
-</p>
-
 
 <%= link_to 'Editar', edit_faq_path(@faq) %> |
 <%= link_to 'Volver', faqs_path %>
